@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Tic Tac Toe</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet"> -->
+  </head>
+  <body
+    class=" bg-[url('pexels-ann-h-45017-3482441.jpg')] bg-cover"
+    style="font-family: 'Delicious Handrawn', cursive"
+  >
+  <div class="text-center mt-[20px] ">
+      <h1 class="  text-[40px] font-extrabold text-gray-600">X vs O: The Game</h1>
+  </div>
+
+ 
+    <div id="gameContainer" class="flex justify-center items-center gap-[50px] mt-[60px]">
+
+      <div
+        id="gridContainer"
+        class="grid grid-cols-3 grid-rows-3 h-[400px] w-[400px]  gap-4"
+      >
+
+        <div
+          id="0"
+          class="cell col-span-1 row-span-1 text-8xl text-[#EC058E] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="1"
+          class="cell col-span-1 row-span-1 text-8xl text-[#ADFC92] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="2"
+          class="cell col-span-1 row-span-1 text-8xl text-[#D62828] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="3"
+          class="cell col-span-1 row-span-1 text-8xl text-[#F77F00] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="4"
+          class="cell col-span-1 row-span-1 text-8xl text-[#4A0D67] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="5"
+          class="cell col-span-1 row-span-1 text-8xl text-[#881600] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="6"
+          class="cell col-span-1 row-span-1 text-8xl text-[#E3E36A] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="7"
+          class="cell col-span-1 row-span-1 text-8xl text-[#E899DC] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+        <div
+          id="8"
+          class="cell col-span-1 row-span-1 text-8xl text-[#BCD8C1] text-center rounded-2xl bg-[#FFDDD2] active:bg-[#deb7a9] shadow-lg shadow-[#E29578]"
+        ></div>
+      </div>
+       <div class="">
+        <h1
+          class="statusText text-center text-[70px] mt-6 text-gray-600 font-extrabold"
+        ></h1>
+        <div class="flex justify-center mt-8">
+          <button
+            class="restartBtn px-8 py-2 rounded-2xl font-bold text-emerald-400 bg-emerald-800"
+          >
+            Restart
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
